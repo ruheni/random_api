@@ -1,5 +1,5 @@
 const app = document.getElementById('app');
-const url = 'https://randomuser.me/api/?results=20';
+const url = 'https://randomuser.me/api/?results=35';
 
 (async function displayUsers() {
 	await fetch(url)
