@@ -29,14 +29,19 @@ const url = 'https://randomuser.me/api/?results=20';
 				cardContent.appendChild(cardImg);
 
 				let details = document.createElement('p');
+
 				let pName = document.createElement('p');
-				pName.append(`Name: ${(last, first)}`);
+				pName.append(`Name: ${first} ${last}`);
+
 				let pAge = document.createElement('p');
 				pAge.append(`Age: ${age}`);
+
 				let pEmail = document.createElement('p');
 				pEmail.append(`E-mail: ${email}`);
+
 				let pPhone = document.createElement('p');
 				pPhone.append(`Phone: ${phone}`);
+
 				details
 					.appendChild(pName)
 					.appendChild(pAge)
