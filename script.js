@@ -28,7 +28,7 @@ const url = 'https://randomuser.me/api/?results=35';
 				);
 				cardContent.appendChild(cardImg);
 
-				let details = document.createElement('p');
+				let details = document.createElement('div');
 
 				let pName = document.createElement('p');
 				pName.append(`Name: ${first} ${last}`);
@@ -42,11 +42,11 @@ const url = 'https://randomuser.me/api/?results=35';
 				let pPhone = document.createElement('p');
 				pPhone.append(`Phone: ${phone}`);
 
-				details
-					.appendChild(pName)
-					.appendChild(pAge)
-					.appendChild(pEmail)
-					.appendChild(pPhone);
+				details.appendChild(pName);
+				details.appendChild(pAge);
+				details.appendChild(pEmail);
+				details.appendChild(pPhone);
+
 				cardContent.appendChild(details);
 				app.appendChild(card);
 
